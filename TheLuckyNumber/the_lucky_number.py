@@ -24,6 +24,9 @@ for x in range(l, r + 1):
             luck6 = True
         if int(c) == 8:
             luck8 = True
+        if luck6 & luck8:
+            break
+            
     # xor 
     if luck6 ^ luck8:
         n += 1
